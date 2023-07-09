@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FStuDies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>FStuDies</span>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="quiz-container">
+            <div class="welcome-message">
+                <h1>We<span class="underline">lcome</span> to the Qu<span>ize</span>Zone</h1>
+                <p><span class="underline-span">your knowledge</span> and have fun!</p>
+            </div>
+            <div class="dropdown-container">
+                <label for="languageSelect">Select a language:</label>
+                <select id="languageSelect" onchange="loadQuestions()">
+                    <option value="">Select</option>
+                    <option value="python">Python</option>
+                    <p>Beginner's challenges</p>
+                    <option value="javascript">JavaScript</option>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                </select>
+            </div>
+            <div id="questionsContainer"></div>
+            <a href="index2.html" class="goback-button">Go Back</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 FStuDies. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
